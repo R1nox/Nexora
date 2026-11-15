@@ -1,0 +1,10 @@
+{ "id": "system-monitor", "name": "System Monitor", "version": "1.0.0", "apiVersion": 1, "author": "Windows Customization Hub",
+  "category": "System", "description": "Виджет с загрузкой CPU, GPU, оперативной памяти и температурой. Температура доступна, если Windows или LibreHardwareMonitor её отдаёт.",
+  "permissions": ["settings", "system.stats"],
+  "windows": [{ "id": "widget", "entry": "index.html", "width": 290, "height": 220, "position": "top-right", "draggable": true }],
+  "settings": [
+    { "key": "showGpu", "label": "Показывать GPU", "type": "toggle", "default": true },
+    { "key": "showTemp", "label": "Показывать температуру", "type": "toggle", "default": true },
+    { "key": "accent", "label": "Акцентный цвет", "type": "color", "default": "#8b5cf6" }
+  ],
+  "changelog": ["1.0.0 — CPU, GPU, RAM, температура"] }

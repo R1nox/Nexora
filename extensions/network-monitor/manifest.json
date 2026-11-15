@@ -1,0 +1,6 @@
+{ "id": "network-monitor", "name": "Network Monitor", "version": "1.0.0", "apiVersion": 1, "author": "Windows Customization Hub",
+  "category": "System", "description": "Скорость загрузки и отдачи в реальном времени с графиком за последнюю минуту.",
+  "permissions": ["settings", "system.stats"],
+  "windows": [{ "id": "widget", "entry": "index.html", "width": 270, "height": 150, "position": "top-right", "offsetY": 250, "draggable": true }],
+  "settings": [{ "key": "unitBits", "label": "Показывать в битах (Мбит/с)", "type": "toggle", "default": false }, { "key": "accent", "label": "Акцентный цвет", "type": "color", "default": "#22d3ee" }],
+  "changelog": ["1.0.0 — первая версия"] }

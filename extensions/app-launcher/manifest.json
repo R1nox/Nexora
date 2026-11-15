@@ -1,0 +1,6 @@
+{ "id": "app-launcher", "name": "App Launcher", "version": "1.0.0", "apiVersion": 1, "author": "Windows Customization Hub",
+  "category": "Productivity", "description": "Быстрый запуск ваших приложений из красивой панели по горячей клавише. Список приложений вы собираете сами.",
+  "permissions": ["settings", "apps.launch"],
+  "windows": [{ "id": "panel", "title": "App Launcher", "entry": "index.html", "width": 480, "height": 400, "position": "center", "alwaysOnTop": true, "panel": true, "showOnEnable": false, "hotkeySetting": "hotkey" }],
+  "settings": [{ "key": "hotkey", "label": "Горячая клавиша", "type": "hotkey", "default": "Ctrl+Alt+L" }, { "key": "apps", "label": "Приложения", "type": "apps", "default": [] }],
+  "changelog": ["1.0.0 — первая версия"] }

@@ -1,0 +1,6 @@
+{ "id": "music-widget", "name": "Music Widget", "version": "1.0.0", "apiVersion": 1, "author": "Windows Customization Hub",
+  "category": "Media", "description": "Управление музыкой любого плеера (Spotify, YouTube Music, браузер, foobar): название, исполнитель, прогресс, пауза и переключение треков.",
+  "permissions": ["settings", "media.read", "media.control"],
+  "windows": [{ "id": "widget", "entry": "index.html", "width": 360, "height": 150, "position": "bottom-right", "draggable": true }],
+  "settings": [{ "key": "accent", "label": "Акцентный цвет", "type": "color", "default": "#ec4899" }],
+  "changelog": ["1.0.0 — первая версия, работает через системное управление медиа Windows"] }

@@ -1,0 +1,12 @@
+{ "id": "clock-widget", "name": "Clock Widget", "version": "1.0.0", "apiVersion": 1, "author": "Windows Customization Hub",
+  "category": "Widgets", "description": "Красивые часы на рабочем столе: цифровые и минималистичные, 12/24 часа, секунды, дата.",
+  "permissions": ["settings"],
+  "windows": [{ "id": "widget", "entry": "index.html", "width": 300, "height": 150, "position": "top-left", "draggable": true }],
+  "settings": [
+    { "key": "style", "label": "Стиль", "type": "select", "default": "digital", "options": [["digital", "Цифровой"], ["minimal", "Минимализм"], ["analog", "Стрелочные"]] },
+    { "key": "hour24", "label": "24-часовой формат", "type": "toggle", "default": true },
+    { "key": "seconds", "label": "Показывать секунды", "type": "toggle", "default": false },
+    { "key": "date", "label": "Показывать дату", "type": "toggle", "default": true },
+    { "key": "accent", "label": "Акцентный цвет", "type": "color", "default": "#8b5cf6" }
+  ],
+  "changelog": ["1.0.0 — три стиля часов"] }

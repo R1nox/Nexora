@@ -1,0 +1,6 @@
+{ "id": "volume-control", "name": "Volume Control", "version": "1.0.0", "apiVersion": 1, "author": "Windows Customization Hub",
+  "category": "System", "description": "Собственный регулятор громкости: компактная панель по горячей клавише или из значка в трее. Ползунок и отключение звука.",
+  "permissions": ["settings", "audio.read", "audio.control"],
+  "windows": [{ "id": "panel", "title": "Громкость", "entry": "index.html", "width": 340, "height": 170, "position": "bottom-right", "alwaysOnTop": true, "panel": true, "showOnEnable": false, "hotkeySetting": "hotkey" }],
+  "settings": [{ "key": "hotkey", "label": "Горячая клавиша", "type": "hotkey", "default": "Ctrl+Alt+V" }, { "key": "step", "label": "Шаг колёсика мыши, %", "type": "slider", "min": 1, "max": 10, "default": 5 }],
+  "changelog": ["1.0.0 — первая версия"] }

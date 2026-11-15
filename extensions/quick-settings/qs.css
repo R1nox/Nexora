@@ -1,0 +1,4 @@
+#grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.hide{display:none}
+.t{padding:12px;border-radius:16px;background:var(--bg2);border:1px solid var(--line);cursor:pointer;min-height:64px;transition:all .15s}
+.t.on{background:linear-gradient(135deg,rgba(139,92,246,.55),rgba(34,211,238,.35));border-color:rgba(255,255,255,.25)}.t:hover{transform:translateY(-1px)}
+.t .n{font-size:12px;font-weight:600}.t .s{font-size:11px;color:var(--dim);margin-top:4px}.t.on .s{color:#e8e8ff}.t.off{opacity:.45;cursor:not-allowed}

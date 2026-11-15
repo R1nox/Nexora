@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'self' 'unsafe-inline'">
+<style>
+  html,body{margin:0;height:100%;background:transparent;overflow:hidden;pointer-events:none}
+  #bar{position:absolute;box-sizing:border-box}
+  #grad,#glow{position:absolute;inset:0;border-radius:inherit}
+</style></head>
+<body><div id="bar"><div id="grad"></div><div id="glow"></div></div>
+<script>
+(function(){
+  const bar=document.getElementById('bar'),grad=document.getElementById('grad'),glow=document.getElementById('glow');
+  function hex2rgba(h,a){const n=parseInt(h.slice(1),16);return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`}
+  overlayApi.onUpdate((i)=>{
+    const {edge,pad,taskbar:t,inset,radius,overlay:o}=i;
+    const horiz = edge==='bottom'||edge==='top';
+    // position the taskbar-shaped bar inside the padded window
+    let left=0,top=0,w=t.w,h=t.h;
+    if(edge==='bottom'){top=pad} else if(edge==='right'){left=pad}
+    if(horiz){left+=inset.x;w-=inset.x*2;top+= (edge==='bottom'?inset.top:inset.top);h-=inset.top+inset.bottom}
+    else{top+=inset.x;h-=inset.x*2}
+    Object.assign(bar.style,{left:left+'px',top:top+'px',width:w+'px',height:h+'px',borderRadius:radius+'px'});
+    const s=o.shadow;
+    bar.style.boxShadow = s.enabled ? `0 0 ${s.blur}px ${Math.round(s.blur/4)}px rgba(0,0,0,${s.opacity/100})` : 'none';
+    const g=o.gradient;
+    grad.style.background = g.enabled ? `linear-gradient(${g.angle}deg, ${g.from}, ${g.to})` : 'none';
+    grad.style.opacity = g.enabled ? g.opacity/100 : 0;
+    const gl=o.glow, side={bottom:'top',top:'bottom',left:'right',right:'left'}[edge];
+    glow.style.cssText='position:absolute;inset:0;border-radius:inherit;';
+    if(gl.enabled){
+      const k=gl.intensity/100;
+      glow.style.boxShadow=`inset 0 0 ${6+14*k}px ${hex2rgba(gl.color,0.15+0.5*k)}`;
+      glow.style['border-'+side]=`1.5px solid ${hex2rgba(gl.color,0.4+0.6*k)}`;
+    }
+  });
+})();
+</script></body></html>

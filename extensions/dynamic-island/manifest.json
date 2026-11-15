@@ -1,0 +1,11 @@
+{ "id": "dynamic-island", "name": "Dynamic Island", "version": "1.0.0", "apiVersion": 1, "author": "Windows Customization Hub",
+  "category": "Widgets", "description": "Интерактивный «остров» в верхней части экрана: время, музыка с управлением, загрузка системы и уведомления приложения.",
+  "permissions": ["settings", "notifications", "system.stats", "media.read", "media.control", "window"],
+  "windows": [{ "id": "island", "entry": "index.html", "width": 440, "height": 190, "position": "top-center", "offsetY": 2, "alwaysOnTop": true, "focusable": false }],
+  "settings": [
+    { "key": "showMedia", "label": "Показывать музыку", "type": "toggle", "default": true },
+    { "key": "showStats", "label": "Показывать загрузку CPU и RAM", "type": "toggle", "default": true },
+    { "key": "expandOnHover", "label": "Раскрывать при наведении", "type": "toggle", "default": true },
+    { "key": "accent", "label": "Акцентный цвет", "type": "color", "default": "#8b5cf6" }
+  ],
+  "changelog": ["1.0.0 — первая версия: время, музыка, статистика, уведомления"] }

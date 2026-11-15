@@ -1,0 +1,335 @@
+{
+  "format": "wch-repository",
+  "version": 1,
+  "name": "Windows Customization Hub — official",
+  "updated": "2026-11-14T23:12:18.519Z",
+  "extensions": [
+    {
+      "id": "app-launcher",
+      "name": "App Launcher",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "Productivity",
+      "description": "Быстрый запуск ваших приложений из красивой панели по горячей клавише. Список приложений вы собираете сами.",
+      "permissions": [
+        "settings",
+        "apps.launch"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — первая версия"
+      ],
+      "minHub": "1.0.0",
+      "size": 4917,
+      "package": "packages/app-launcher-1.0.0.wcx",
+      "sha256": "37f332de074b4eeea5bbcb0a0957d2fb4524b47bd1677652e9a47b61685b90fa",
+      "signature": "av1OrP39BEfics1Bu1rRlBfXVCx+z24eBVmjPDqqSb6M5dWJinGuOUqps+w7tryV1aWJ7ykXDZY/9CVSnOtUDw==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWM0ODk5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48ZyBmaWxsPSIjZmZmIj48cmVjdCB4PSIxMyIgeT0iMTMiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgcng9IjQiLz48cmVjdCB4PSIzNiIgeT0iMTMiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgcng9IjQiLz48cmVjdCB4PSIxMyIgeT0iMzYiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgcng9IjQiLz48cmVjdCB4PSIzNiIgeT0iMzYiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgcng9IjQiLz48L2c+PC9zdmc+",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM4YjVjZjYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlYzQ4OTkiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iOTAiIHk9IjM2IiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE5MCIgcng9IjI0IiBmaWxsPSIjMTIxMjFjIiBzdHJva2U9IiNmZmZmZmYyMiIvPjxnPjxyZWN0IHg9IjExMiIgeT0iNjQiIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgcng9IjEyIiBmaWxsPSIjNjM2NmYxIi8+PHJlY3QgeD0iMTcyIiB5PSI2NCIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjQ2IiByeD0iMTIiIGZpbGw9IiNlYzQ4OTkiLz48cmVjdCB4PSIyMzIiIHk9IjY0IiB3aWR0aD0iNDYiIGhlaWdodD0iNDYiIHJ4PSIxMiIgZmlsbD0iIzEwYjk4MSIvPjxyZWN0IHg9IjI5MiIgeT0iNjQiIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgcng9IjEyIiBmaWxsPSIjZjU5ZTBiIi8+PHJlY3QgeD0iMTEyIiB5PSIxMjgiIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgcng9IjEyIiBmaWxsPSIjMDZiNmQ0Ii8+PHJlY3QgeD0iMTcyIiB5PSIxMjgiIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgcng9IjEyIiBmaWxsPSIjYTg1NWY3Ii8+PHJlY3QgeD0iMjMyIiB5PSIxMjgiIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgcng9IjEyIiBmaWxsPSIjZWY0NDQ0Ii8+PHJlY3QgeD0iMjkyIiB5PSIxMjgiIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgcng9IjEyIiBmaWxsPSIjZmZmZmZmMTgiLz48L2c+PC9zdmc+"
+    },
+    {
+      "id": "clock-widget",
+      "name": "Clock Widget",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "Widgets",
+      "description": "Красивые часы на рабочем столе: цифровые и минималистичные, 12/24 часа, секунды, дата.",
+      "permissions": [
+        "settings"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — три стиля часов"
+      ],
+      "minHub": "1.0.0",
+      "size": 4835,
+      "package": "packages/clock-widget-1.0.0.wcx",
+      "sha256": "db7f5b528c27213a3e42d51c201b6826d900564886c3b64ed0fbaf4794727334",
+      "signature": "8r54t2J7+bQjUgodK9daTV8u3ay7vMUH2od9gveGB+BFVMBzl7/9CjlsJhGXJatSjwk8kZs8y2GSbBGKjS8gDA==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWY0NDQ0Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIxOCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzIgMjJ2MTFsNyA0IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmNTllMGIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlZjQ0NDQiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iMTIwIiB5PSI2MCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIxMjAiIHJ4PSIyMiIgZmlsbD0iIzEyMTIxYyIgc3Ryb2tlPSIjZmZmZmZmMjIiLz48dGV4dCB4PSIyNDAiIHk9IjEyOCIgZmlsbD0iI2ZmZiIgZm9udC1zaXplPSI1MiIgZm9udC13ZWlnaHQ9IjYwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJIj4xNDozMjwvdGV4dD48dGV4dCB4PSIyNDAiIHk9IjE1OCIgZmlsbD0iIzljYTNhZiIgZm9udC1zaXplPSIxMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJIj7RgdGD0LHQsdC+0YLQsCwgMTUg0L3QvtGP0LHRgNGPPC90ZXh0Pjwvc3ZnPg=="
+    },
+    {
+      "id": "dynamic-island",
+      "name": "Dynamic Island",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "Widgets",
+      "description": "Интерактивный «остров» в верхней части экрана: время, музыка с управлением, загрузка системы и уведомления приложения.",
+      "permissions": [
+        "settings",
+        "notifications",
+        "system.stats",
+        "media.read",
+        "media.control",
+        "window"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — первая версия: время, музыка, статистика, уведомления"
+      ],
+      "minHub": "1.0.0",
+      "size": 5759,
+      "package": "packages/dynamic-island-1.0.0.wcx",
+      "sha256": "34b951377d770ce398b980114bf7a7b2ce6a8ac41ddc79af66e74df1b83bfe58",
+      "signature": "hznU6d4UrOouKI93XJTwhXrSfjDKwdwSaZQKnbi9hKtF4psjG/ilHyuicLpVzR7zjKr1CGD6vlJPIs50pF+uCQ==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjN2MzYWVkIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48cmVjdCB4PSIxNCIgeT0iMjYiIHdpZHRoPSIzNiIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNmZmYiLz48Y2lyY2xlIGN4PSIyMSIgY3k9IjMyIiByPSIyLjIiIGZpbGw9IiM3YzNhZWQiLz48L3N2Zz4=",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM3YzNhZWQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNmI2ZDQiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iMTUwIiB5PSIzMCIgd2lkdGg9IjE4MCIgaGVpZ2h0PSI0MCIgcng9IjIwIiBmaWxsPSIjMDAwIi8+PGNpcmNsZSBjeD0iMTcyIiBjeT0iNTAiIHI9IjUiIGZpbGw9IiNhNzhiZmEiLz48dGV4dCB4PSIxOTAiIHk9IjU1IiBmaWxsPSIjZmZmIiBmb250LXNpemU9IjE1IiBmb250LWZhbWlseT0iU2Vnb2UgVUkiPjE0OjMyPC90ZXh0Pjx0ZXh0IHg9IjI2MiIgeT0iNTUiIGZpbGw9IiM5Y2EzYWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSI+4pmqIE1pZG5pZ2h0PC90ZXh0PjxyZWN0IHg9IjExMCIgeT0iOTIiIHdpZHRoPSIyNjAiIGhlaWdodD0iODQiIHJ4PSIyNiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjkyIi8+PHJlY3QgeD0iMTI4IiB5PSIxMDgiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgcng9IjEyIiBmaWxsPSIjOGI1Y2Y2Ii8+PHJlY3QgeD0iMTg4IiB5PSIxMTQiIHdpZHRoPSIxMTAiIGhlaWdodD0iOSIgcng9IjQiIGZpbGw9IiNmZmYiLz48cmVjdCB4PSIxODgiIHk9IjEzMiIgd2lkdGg9IjcwIiBoZWlnaHQ9IjciIHJ4PSIzIiBmaWxsPSIjNmI3MjgwIi8+PGNpcmNsZSBjeD0iMzIwIiBjeT0iMTMyIiByPSIxNCIgZmlsbD0iIzJhMmEzNSIvPjxwYXRoIGQ9Ik0zMTYgMTI1IGwxMiA3IC0xMiA3eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="
+    },
+    {
+      "id": "dynamic-taskbar",
+      "name": "Dynamic Taskbar",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "Taskbar",
+      "description": "Панель задач меняет материал в зависимости от ситуации: прозрачная на рабочем столе, сплошная под развёрнутым окном, акриловая при открытом «Пуске», с плавными переходами.",
+      "permissions": [
+        "settings"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — динамические состояния: окно развёрнуто, «Пуск» открыт"
+      ],
+      "minHub": "1.0.0",
+      "size": 1820,
+      "package": "packages/dynamic-taskbar-1.0.0.wcx",
+      "sha256": "c73e5d48c4e345a02aa13fccf497279ab9482c300702e1620402a44d8314858c",
+      "signature": "6l5Rmw0fzgLtGdPOwyputBus/Ckie8lfa8mfjE6SPIFgyWHIvGDNKgPdthyJIj1+QU9XRVFj2LbUGXHfNHAoCg==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjU2M2ViIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYTg1NWY3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48cmVjdCB4PSIxMCIgeT0iMzgiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxMCIgcng9IjUiIGZpbGw9IiNmZmYiLz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSIzMiIgaGVpZ2h0PSIxNiIgcng9IjMiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii41NSIvPjwvc3ZnPg==",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyNTYzZWIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iNjAiIHk9IjQwIiB3aWR0aD0iMzYwIiBoZWlnaHQ9IjE1MCIgcng9IjEwIiBmaWxsPSIjMWYyOTM3Ii8+PHJlY3QgeD0iNjAiIHk9IjQwIiB3aWR0aD0iMzYwIiBoZWlnaHQ9IjIyIiByeD0iMTAiIGZpbGw9IiMzNzQxNTEiLz48cmVjdCB4PSI0MCIgeT0iMjA1IiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM0IiByeD0iMTIiIGZpbGw9IiMxMTExMTgiLz48ZyBmaWxsPSIjYTc4YmZhIj48Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMjIiIHI9IjgiLz48Y2lyY2xlIGN4PSIyMzAiIGN5PSIyMjIiIHI9IjgiIGZpbGw9IiMyMmQzZWUiLz48Y2lyY2xlIGN4PSIyNjAiIGN5PSIyMjIiIHI9IjgiIGZpbGw9IiNmNDcyYjYiLz48L2c+PHRleHQgeD0iNjAiIHk9IjI1NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjciIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSI+0L7QutC90L4g0YDQsNC30LLRkdGA0L3Rg9GC0L4g4oaSINGB0L/Qu9C+0YjQvdCw0Y8g0L/QsNC90LXQu9GMPC90ZXh0Pjwvc3ZnPg=="
+    },
+    {
+      "id": "music-widget",
+      "name": "Music Widget",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "Media",
+      "description": "Управление музыкой любого плеера (Spotify, YouTube Music, браузер, foobar): название, исполнитель, прогресс, пауза и переключение треков.",
+      "permissions": [
+        "settings",
+        "media.read",
+        "media.control"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — первая версия, работает через системное управление медиа Windows"
+      ],
+      "minHub": "1.0.0",
+      "size": 4419,
+      "package": "packages/music-widget-1.0.0.wcx",
+      "sha256": "6d5e2526e45eb55473a63f446b97b736fb80baf24687768509bbf99e10928eab",
+      "signature": "SHazZTA1bMRa1kz7m36N5/3I248ubgKvgpR7tJgiN/aa4QwrmVaqgk0XH6ixd3+02sWBtWPAJIPb/BYwJxMXDg==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWM0ODk5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48cGF0aCBkPSJNMjYgMTR2MjRhNyA3IDAgMSAxLTUtNi43VjE4bDIwLTV2MjJhNyA3IDAgMSAxLTUtNi43VjE2eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlYzQ4OTkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4YjVjZjYiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iOTAiIHk9IjYwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEzMCIgcng9IjIyIiBmaWxsPSIjMTIxMjFjIiBzdHJva2U9IiNmZmZmZmYyMiIvPjxyZWN0IHg9IjEwOCIgeT0iNzgiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcng9IjE0IiBmaWxsPSIjZWM0ODk5Ii8+PHRleHQgeD0iMTg0IiB5PSIxMDQiIGZpbGw9IiNmZmYiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSI+TWlkbmlnaHQgQ2l0eTwvdGV4dD48dGV4dCB4PSIxODQiIHk9IjEyNCIgZmlsbD0iIzljYTNhZiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IlNlZ29lIFVJIj5NODM8L3RleHQ+PHJlY3QgeD0iMTA4IiB5PSIxNTIiIHdpZHRoPSIyNjQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZjIyIi8+PHJlY3QgeD0iMTA4IiB5PSIxNTIiIHdpZHRoPSIxNDAiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2VjNDg5OSIvPjxjaXJjbGUgY3g9IjI0MCIgY3k9IjE3NiIgcj0iMCIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="
+    },
+    {
+      "id": "network-monitor",
+      "name": "Network Monitor",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "System",
+      "description": "Скорость загрузки и отдачи в реальном времени с графиком за последнюю минуту.",
+      "permissions": [
+        "settings",
+        "system.stats"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — первая версия"
+      ],
+      "minHub": "1.0.0",
+      "size": 4273,
+      "package": "packages/network-monitor-1.0.0.wcx",
+      "sha256": "0df1fa72fff9bc47bed96501d9eac21869fe2ff933f4ec989a3016dec18e60dc",
+      "signature": "bb30IkjrGxPqQomBcccNcgdLg6CtIBsI0tBZAZnm6RBjsXi6zSJ4wmFOummgnmJIjragPxhnRbGA7UN0u1+sBQ==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjU2M2ViIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48cGF0aCBkPSJNMzIgMTJ2MzBNMjAgMzBsMTIgMTIgMTItMTIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwNmI2ZDQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyNTYzZWIiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iMTMwIiB5PSI2MCIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIxMzAiIHJ4PSIyMCIgZmlsbD0iIzEyMTIxYyIgc3Ryb2tlPSIjZmZmZmZmMjIiLz48dGV4dCB4PSIxNDgiIHk9IjkwIiBmaWxsPSIjOWNhM2FmIiBmb250LXNpemU9IjExIiBmb250LWZhbWlseT0iU2Vnb2UgVUkiPuKGkyDQl9Cw0LPRgNGD0LfQutCwPC90ZXh0Pjx0ZXh0IHg9IjE0OCIgeT0iMTEwIiBmaWxsPSIjZmZmIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iU2Vnb2UgVUkiPjEyLjQg0JzQkS/RgTwvdGV4dD48dGV4dCB4PSIyNTAiIHk9IjkwIiBmaWxsPSIjOWNhM2FmIiBmb250LXNpemU9IjExIiBmb250LWZhbWlseT0iU2Vnb2UgVUkiPuKGkSDQntGC0LTQsNGH0LA8L3RleHQ+PHRleHQgeD0iMjUwIiB5PSIxMTAiIGZpbGw9IiNmZmYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSI+MS44INCc0JEv0YE8L3RleHQ+PHBhdGggZD0iTTE0OCAxNzAgbDIwLTE0IDE2IDYgMjItMjYgMTggMTggMjQtMjAgMjAgMTIgMzAtMjIiIHN0cm9rZT0iIzIyZDNlZSIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiLz48L3N2Zz4="
+    },
+    {
+      "id": "quick-settings",
+      "name": "Quick Settings",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "System",
+      "description": "Собственная панель быстрых настроек: тёмная тема, прозрачность, значки рабочего стола, эффекты и автоскрытие панели задач, громкость.",
+      "permissions": [
+        "settings",
+        "system.settings",
+        "audio.read",
+        "audio.control"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — первая версия"
+      ],
+      "minHub": "1.0.0",
+      "size": 4718,
+      "package": "packages/quick-settings-1.0.0.wcx",
+      "sha256": "ef48a3ed99a5800af6fa530438c990121dbde0a106434273468dcdf1aa17da91",
+      "signature": "EplRnvCAdKng8nNliW9NxAc4ym6UiOOuFQ4K6bTO6NkCHhzb0DFr2xNPkoe54r7rgQIpbbiUPb42F74vk2ouBw==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNjM2NmYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTRiOGE2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48ZyBmaWxsPSIjZmZmIj48cmVjdCB4PSIxMiIgeT0iMTQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCIgcng9IjQiLz48cmVjdCB4PSIzNCIgeT0iMTQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCIgcng9IjQiIG9wYWNpdHk9Ii41NSIvPjxyZWN0IHg9IjEyIiB5PSIzNCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE0IiByeD0iNCIgb3BhY2l0eT0iLjU1Ii8+PHJlY3QgeD0iMzQiIHk9IjM0IiB3aWR0aD0iMTgiIGhlaWdodD0iMTQiIHJ4PSI0Ii8+PC9nPjwvc3ZnPg==",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNGI4YTYiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iMTMwIiB5PSIyNCIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIyMTQiIHJ4PSIyMiIgZmlsbD0iIzEyMTIxYyIgc3Ryb2tlPSIjZmZmZmZmMjIiLz48Zz48cmVjdCB4PSIxNDgiIHk9IjU4IiB3aWR0aD0iODIiIGhlaWdodD0iNTIiIHJ4PSIxNCIgZmlsbD0iIzdjM2FlZCIvPjxyZWN0IHg9IjI0OCIgeT0iNTgiIHdpZHRoPSI4MiIgaGVpZ2h0PSI1MiIgcng9IjE0IiBmaWxsPSIjZmZmZmZmMTQiLz48cmVjdCB4PSIxNDgiIHk9IjEyMiIgd2lkdGg9IjgyIiBoZWlnaHQ9IjUyIiByeD0iMTQiIGZpbGw9IiNmZmZmZmYxNCIvPjxyZWN0IHg9IjI0OCIgeT0iMTIyIiB3aWR0aD0iODIiIGhlaWdodD0iNTIiIHJ4PSIxNCIgZmlsbD0iIzdjM2FlZCIvPjwvZz48cmVjdCB4PSIxNDgiIHk9IjE5NiIgd2lkdGg9IjE4MiIgaGVpZ2h0PSI3IiByeD0iMy41IiBmaWxsPSIjZmZmZmZmMjIiLz48cmVjdCB4PSIxNDgiIHk9IjE5NiIgd2lkdGg9IjExMCIgaGVpZ2h0PSI3IiByeD0iMy41IiBmaWxsPSIjMjJkM2VlIi8+PC9zdmc+"
+    },
+    {
+      "id": "system-monitor",
+      "name": "System Monitor",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "System",
+      "description": "Виджет с загрузкой CPU, GPU, оперативной памяти и температурой. Температура доступна, если Windows или LibreHardwareMonitor её отдаёт.",
+      "permissions": [
+        "settings",
+        "system.stats"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — CPU, GPU, RAM, температура"
+      ],
+      "minHub": "1.0.0",
+      "size": 4635,
+      "package": "packages/system-monitor-1.0.0.wcx",
+      "sha256": "6b1d3c679f63eddac31343a405609a1589cbe845447224435a2ad2b22887a594",
+      "signature": "uwBHkSW3g5dOfDI61NXpV6MDqY65Q0lOZ+zun5LtXxLxoFFpxMPBoeD9UX648akw9qLwh2WGb3MxckMmrdC7DQ==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTBiOTgxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48cGF0aCBkPSJNMTAgNDAgbDEwLTE0IDggOCAxMC0xOCA4IDE0IDgtNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxMGI5ODEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzYjgyZjYiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iMTUwIiB5PSIzNCIgd2lkdGg9IjE4MCIgaGVpZ2h0PSIxNzAiIHJ4PSIyMCIgZmlsbD0iIzEyMTIxYyIgc3Ryb2tlPSIjZmZmZmZmMjIiLz48ZyBmb250LWZhbWlseT0iU2Vnb2UgVUkiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNjYmQ1ZTEiPjx0ZXh0IHg9IjE2OCIgeT0iNjYiPkNQVTwvdGV4dD48dGV4dCB4PSIzMDAiIHk9IjY2IiB0ZXh0LWFuY2hvcj0iZW5kIj40NiU8L3RleHQ+PHRleHQgeD0iMTY4IiB5PSIxMDgiPkdQVTwvdGV4dD48dGV4dCB4PSIzMDAiIHk9IjEwOCIgdGV4dC1hbmNob3I9ImVuZCI+MTYlPC90ZXh0Pjx0ZXh0IHg9IjE2OCIgeT0iMTUwIj7Qn9Cw0LzRj9GC0Yw8L3RleHQ+PHRleHQgeD0iMzAwIiB5PSIxNTAiIHRleHQtYW5jaG9yPSJlbmQiPjUxJTwvdGV4dD48L2c+PGcgZmlsbD0iI2ZmZmZmZjE0Ij48cmVjdCB4PSIxNjgiIHk9Ijc0IiB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjciIHJ4PSIzLjUiLz48cmVjdCB4PSIxNjgiIHk9IjExNiIgd2lkdGg9IjE0NCIgaGVpZ2h0PSI3IiByeD0iMy41Ii8+PHJlY3QgeD0iMTY4IiB5PSIxNTgiIHdpZHRoPSIxNDQiIGhlaWdodD0iNyIgcng9IjMuNSIvPjwvZz48ZyBmaWxsPSIjOGI1Y2Y2Ij48cmVjdCB4PSIxNjgiIHk9Ijc0IiB3aWR0aD0iNjYiIGhlaWdodD0iNyIgcng9IjMuNSIvPjxyZWN0IHg9IjE2OCIgeT0iMTE2IiB3aWR0aD0iMjMiIGhlaWdodD0iNyIgcng9IjMuNSIvPjxyZWN0IHg9IjE2OCIgeT0iMTU4IiB3aWR0aD0iNzMiIGhlaWdodD0iNyIgcng9IjMuNSIvPjwvZz48L3N2Zz4="
+    },
+    {
+      "id": "volume-control",
+      "name": "Volume Control",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "System",
+      "description": "Собственный регулятор громкости: компактная панель по горячей клавише или из значка в трее. Ползунок и отключение звука.",
+      "permissions": [
+        "settings",
+        "audio.read",
+        "audio.control"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — первая версия"
+      ],
+      "minHub": "1.0.0",
+      "size": 4410,
+      "package": "packages/volume-control-1.0.0.wcx",
+      "sha256": "e620884f5eea67bbdedf1b337b23b0c9ac7da9aa3a60625cd9e163facbab0ffc",
+      "signature": "60z6NnWs6p4qeUenpbKTKqb5kLMpzICAny/5iZM+29LamOUU3ALg+dSvgRhpvS1jpL9uvlXL3vIZS50D80jdCQ==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMGVhNWU5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjM2NmYxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48cGF0aCBkPSJNMTQgMjZoOGwxMC04djI4bC0xMC04aC04eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0zOCAyNHE2IDggMCAxNk00MyAxOXExMCAxMyAwIDI2IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwZWE1ZTkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iMTEwIiB5PSI3MCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMjAiIHJ4PSIyNCIgZmlsbD0iIzEyMTIxYyIgc3Ryb2tlPSIjZmZmZmZmMjIiLz48dGV4dCB4PSIxMzAiIHk9IjEwMiIgZmlsbD0iI2ZmZiIgZm9udC1zaXplPSIxNSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJIj7Qk9GA0L7QvNC60L7RgdGC0Yw8L3RleHQ+PHRleHQgeD0iMzMwIiB5PSIxMDIiIGZpbGw9IiM5Y2EzYWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSI+NjQlPC90ZXh0PjxjaXJjbGUgY3g9IjE0MCIgY3k9IjE0NiIgcj0iMTciIGZpbGw9IiNmZmZmZmYxNCIvPjxyZWN0IHg9IjE3MCIgeT0iMTQzIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjciIHJ4PSIzLjUiIGZpbGw9IiNmZmZmZmYyMiIvPjxyZWN0IHg9IjE3MCIgeT0iMTQzIiB3aWR0aD0iMTE1IiBoZWlnaHQ9IjciIHJ4PSIzLjUiIGZpbGw9IiM4YjVjZjYiLz48Y2lyY2xlIGN4PSIyODUiIGN5PSIxNDYiIHI9IjkiIGZpbGw9IiNmZmYiLz48L3N2Zz4="
+    },
+    {
+      "id": "weather-widget",
+      "name": "Weather Widget",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "author": "Windows Customization Hub",
+      "category": "Widgets",
+      "description": "Погода для выбранного города: температура, ощущается как, ветер, влажность, прогноз на день. Данные Open-Meteo, ключ API не нужен.",
+      "permissions": [
+        "settings",
+        "storage",
+        "network"
+      ],
+      "dependencies": {},
+      "compat": {
+        "windows": [
+          "10",
+          "11"
+        ],
+        "minBuild": 17763
+      },
+      "changelog": [
+        "1.0.0 — текущая погода и прогноз"
+      ],
+      "minHub": "1.0.0",
+      "size": 5125,
+      "package": "packages/weather-widget-1.0.0.wcx",
+      "sha256": "303bec57e27f53567c827bbc758b51bc636532b046a1580319210a86e4455b06",
+      "signature": "iTGnyUdV5kNrvOSDiIdACiu1f5CRn7NVwP4meqpgSxh0eaqOTeP/RuWQFjKmIjqN0vcBfM+a7mvDUTJY1/XUDg==",
+      "keyId": "wch-official-cadcfe4d",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMzhiZGY4Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmJiZjI0Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjYSkiLz48Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSI4IiBmaWxsPSIjZmRlMDQ3Ii8+PHBhdGggZD0iTTIyIDQ2aDI0YTkgOSAwIDAgMCAwLTE4IDEyIDEyIDAgMCAwLTIzIDMgNyA3IDAgMCAwLTEgMTV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+",
+      "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODAgMjcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzOGJkZjgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmYmJmMjQiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9Ii4zIiBjeT0iLjIiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgZmlsbD0idXJsKCNiKSIvPjxyZWN0IHdpZHRoPSI0ODAiIGhlaWdodD0iMjcwIiBmaWxsPSJ1cmwoI3IpIi8+PHJlY3QgeD0iMTEwIiB5PSI1MCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxNTAiIHJ4PSIyMiIgZmlsbD0iIzEyMTIxYyIgc3Ryb2tlPSIjZmZmZmZmMjIiLz48dGV4dCB4PSIxMzAiIHk9IjgwIiBmaWxsPSIjZmZmIiBmb250LXNpemU9IjE0IiBmb250LWZhbWlseT0iU2Vnb2UgVUkiPtCa0LjQtdCyLCDQo9C60YDQsNC40L3QsDwvdGV4dD48dGV4dCB4PSIxMzAiIHk9IjE0MCIgZm9udC1zaXplPSI0MiI+4puFPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMTQwIiBmaWxsPSIjZmZmIiBmb250LXNpemU9IjQ0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iU2Vnb2UgVUkiPjjCsDwvdGV4dD48dGV4dCB4PSIyMDAiIHk9IjE2MiIgZmlsbD0iIzljYTNhZiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IlNlZ29lIFVJIj7Qn9C10YDQtdC80LXQvdC90LDRjyDQvtCx0LvQsNGH0L3QvtGB0YLRjDwvdGV4dD48dGV4dCB4PSIxMzAiIHk9IjE4NiIgZmlsbD0iIzljYTNhZiIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IlNlZ29lIFVJIj7QktC10YLQtdGAIDEyINC60Lwv0YcgwrcgNzElPC90ZXh0Pjwvc3ZnPg=="
+    }
+  ]
+}

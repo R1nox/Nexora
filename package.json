@@ -1,0 +1,95 @@
+{
+  "name": "windows-customization-hub",
+  "productName": "Windows Customization Hub",
+  "version": "1.0.2",
+  "description": "Unified control center for customizing the Windows taskbar and appearance",
+  "author": "Windows Customization Hub",
+  "main": "src/main/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build:icons": "python3 scripts/make-icons.py",
+    "build:repo": "node scripts/build-repo.js",
+    "test": "node scripts/selftest.js",
+    "dist": "python3 scripts/make-icons.py && node scripts/build-repo.js && node scripts/selftest.js && electron-builder --win nsis --x64 --publish never"
+  },
+  "dependencies": {
+    "koffi": "^2.16.3",
+    "adm-zip": "^0.6.1"
+  },
+  "devDependencies": {
+    "electron": "^45.3.2",
+    "electron-builder": "^26.18.0",
+    "resedit": "^3.1.0"
+  },
+  "build": {
+    "appId": "com.windowscustomizationhub.app",
+    "productName": "Windows Customization Hub",
+    "executableName": "Windows Customization Hub",
+    "copyright": "Windows Customization Hub",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "asar": true,
+    "compression": "normal",
+    "files": [
+      "package.json",
+      "src/**/*",
+      "!src/**/*.map",
+      "node_modules/**/*",
+      "!node_modules/koffi/build/koffi/!(win32_x64)/**",
+      "!node_modules/koffi/src/**",
+      "!node_modules/koffi/doc/**",
+      "!node_modules/**/{test,tests,docs,example,examples,*.md,*.ts.map}"
+    ],
+    "asarUnpack": [
+      "node_modules/koffi/build/koffi/win32_x64/**"
+    ],
+    "extraResources": [
+      {
+        "from": "repository",
+        "to": "repository"
+      },
+      {
+        "from": "build/icon.png",
+        "to": "icon.png"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false,
+      "requestedExecutionLevel": "asInvoker",
+      "artifactName": "WindowsCustomizationHub-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "Windows Customization Hub",
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "installerHeaderIcon": "build/icon.ico",
+      "include": "build/installer.nsh",
+      "language": "1049",
+      "installerLanguages": [
+        "ru_RU"
+      ],
+      "uninstallDisplayName": "Windows Customization Hub"
+    },
+    "afterPack": "scripts/afterPack.js",
+    "publish": null
+  }
+}

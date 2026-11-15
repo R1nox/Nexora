@@ -1,0 +1,9 @@
+{ "id": "weather-widget", "name": "Weather Widget", "version": "1.0.0", "apiVersion": 1, "author": "Windows Customization Hub",
+  "category": "Widgets", "description": "Погода для выбранного города: температура, ощущается как, ветер, влажность, прогноз на день. Данные Open-Meteo, ключ API не нужен.",
+  "permissions": ["settings", "storage", "network"], "network": ["api.open-meteo.com", "geocoding-api.open-meteo.com"],
+  "windows": [{ "id": "widget", "entry": "index.html", "width": 310, "height": 190, "position": "bottom-left", "draggable": true }],
+  "settings": [
+    { "key": "city", "label": "Город", "type": "text", "default": "Kyiv" },
+    { "key": "units", "label": "Единицы", "type": "select", "default": "c", "options": [["c", "°C"], ["f", "°F"]] }
+  ],
+  "changelog": ["1.0.0 — текущая погода и прогноз"] }

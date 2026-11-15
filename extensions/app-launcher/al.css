@@ -1,0 +1,5 @@
+#q{width:100%;margin:12px 0;padding:9px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg2);color:var(--fg);font:inherit;outline:none;-webkit-user-select:text;user-select:text}
+#grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-height:270px;overflow:auto}
+.app{position:relative;padding:12px 6px;border-radius:16px;text-align:center;cursor:pointer;background:var(--bg2);border:1px solid transparent;transition:all .15s}
+.app:hover{border-color:var(--acc);transform:translateY(-2px)}.app img,.app .ph{width:40px;height:40px;border-radius:10px;margin:0 auto 6px;display:grid;place-items:center;background:linear-gradient(135deg,var(--acc),var(--acc2));font-weight:700}
+.app span{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.app .x{position:absolute;top:3px;right:5px;opacity:0;font-size:12px}.app:hover .x{opacity:.8}

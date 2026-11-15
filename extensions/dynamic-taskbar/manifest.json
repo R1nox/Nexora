@@ -1,0 +1,15 @@
+{ "id": "dynamic-taskbar", "name": "Dynamic Taskbar", "version": "1.0.0", "apiVersion": 1, "author": "Windows Customization Hub",
+  "category": "Taskbar", "description": "Панель задач меняет материал в зависимости от ситуации: прозрачная на рабочем столе, сплошная под развёрнутым окном, акриловая при открытом «Пуске», с плавными переходами.",
+  "hostModule": "dynamic-taskbar", "permissions": ["settings"], "windows": [],
+  "settings": [
+    { "key": "maximizedEnabled", "label": "Менять вид, когда окно развёрнуто", "type": "toggle", "default": true },
+    { "key": "maximizedMode", "label": "Материал при развёрнутом окне", "type": "select", "default": "opaque", "options": [["opaque", "Сплошной цвет"], ["acrylic", "Акрил"], ["blur", "Размытие"], ["glass", "Стекло"], ["clear", "Прозрачная"]] },
+    { "key": "maximizedColor", "label": "Цвет при развёрнутом окне", "type": "color", "default": "#111118" },
+    { "key": "maximizedOpacity", "label": "Непрозрачность при развёрнутом окне", "type": "slider", "min": 0, "max": 100, "default": 100 },
+    { "key": "startEnabled", "label": "Менять вид при открытом «Пуске»", "type": "toggle", "default": true },
+    { "key": "startMode", "label": "Материал при открытом «Пуске»", "type": "select", "default": "acrylic", "options": [["opaque", "Сплошной цвет"], ["acrylic", "Акрил"], ["blur", "Размытие"], ["glass", "Стекло"], ["clear", "Прозрачная"]] },
+    { "key": "startColor", "label": "Цвет при открытом «Пуске»", "type": "color", "default": "#1b1530" },
+    { "key": "startOpacity", "label": "Непрозрачность при открытом «Пуске»", "type": "slider", "min": 0, "max": 100, "default": 55 },
+    { "key": "animate", "label": "Плавные переходы", "type": "toggle", "default": true }
+  ],
+  "changelog": ["1.0.0 — динамические состояния: окно развёрнуто, «Пуск» открыт"] }

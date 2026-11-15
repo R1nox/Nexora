@@ -1,0 +1,46 @@
+name: release
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Read version
+        id: v
+        run: echo "version=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
+      - name: Check whether this version is already released
+        id: exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "v${{ steps.v.outputs.version }}" >/dev/null 2>&1; then echo "yes=true" >> "$GITHUB_OUTPUT"; else echo "yes=false" >> "$GITHUB_OUTPUT"; fi
+      - name: Install
+        if: steps.exists.outputs.yes == 'false'
+        run: npm ci
+      - name: Self-test
+        if: steps.exists.outputs.yes == 'false'
+        run: node scripts/selftest.js
+      - name: Build installer
+        if: steps.exists.outputs.yes == 'false'
+        run: npx electron-builder --win nsis --x64 --publish never
+      - name: Create update manifest
+        if: steps.exists.outputs.yes == 'false'
+        run: node scripts/make-release.js "${{ github.repository }}"
+      - name: Publish release
+        if: steps.exists.outputs.yes == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v${{ steps.v.outputs.version }}" "dist/WindowsCustomizationHub-Setup-${{ steps.v.outputs.version }}.exe" dist/update.json --title "Windows Customization Hub ${{ steps.v.outputs.version }}" --notes-file RELEASE_NOTES.txt
