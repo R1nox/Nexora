@@ -1,11 +1,11 @@
 {
   "baseVersion": "1.0.2",
-  "build": "20261115-1214-hot",
-  "sha256": "24d100aabe714e052eef7a32267eef3f489afffba902bbcaee337beee78f706c",
-  "size": 471637,
+  "build": "20261115-1257-hot",
+  "sha256": "05005f4de0ef98579b022d37d65731470120898b21684172929057082fcf31d3",
+  "size": 456247,
   "keyId": "wch-official-cadcfe4d",
-  "signature": "tZZBHjSyv29leNma7VOx/WvedoJuLsh14Yuel/v+CXUwV9tBv1r9/KcXYJGES4QS7OhxvR76+9DeojG0BsD8AQ==",
+  "signature": "EBmU+CHrnNnTxEGTLofgaZTCHpbsyVgvdVLrYPwt5x+/m8YvllWKNjTgzY1NUnIyo2tmgyN8uQuceq0hw8+3Dw==",
   "notes": [
-    "windhawk integration"
+    "Windhawk removed; honest Win11 25H2 taskbar limits"
   ]
 }
