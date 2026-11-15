@@ -1,11 +1,11 @@
 {
   "baseVersion": "1.0.2",
-  "build": "20261115-1151-hot",
-  "sha256": "289f590faa85f889baf0dc37f7f7a2f6b2cfb9c6cfc3c549aaa2ecfccf88fdc0",
-  "size": 454308,
+  "build": "20261115-1210-hot",
+  "sha256": "35e5ee0cd18b4baedff7b97ef24fe09e48cfe6ac571582ccface4700b8d0fa1c",
+  "size": 457014,
   "keyId": "wch-official-cadcfe4d",
-  "signature": "Sg3nvdLkL8+znWJZ/dnm/FFBtcD9a0alesL9iJqlM846XrpRgzLU2XngDqRONAasmQ6XiPd/WqW69So1sNhmCw==",
+  "signature": "zl9KyZszbSXW2fo25tX1Jl8knSDl8NXrENRo8CoqzPiEEBQmbNuoYXHYxkegynranwAjuwvqFALUxXZj/Q5FBg==",
   "notes": [
-    "diag taskbar"
+    "windhawk probe"
   ]
 }
