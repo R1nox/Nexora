@@ -1,11 +1,11 @@
 {
   "baseVersion": "1.0.2",
-  "build": "20261115-1210-hot",
-  "sha256": "35e5ee0cd18b4baedff7b97ef24fe09e48cfe6ac571582ccface4700b8d0fa1c",
-  "size": 457014,
+  "build": "20261115-1214-hot",
+  "sha256": "24d100aabe714e052eef7a32267eef3f489afffba902bbcaee337beee78f706c",
+  "size": 471637,
   "keyId": "wch-official-cadcfe4d",
-  "signature": "zl9KyZszbSXW2fo25tX1Jl8knSDl8NXrENRo8CoqzPiEEBQmbNuoYXHYxkegynranwAjuwvqFALUxXZj/Q5FBg==",
+  "signature": "tZZBHjSyv29leNma7VOx/WvedoJuLsh14Yuel/v+CXUwV9tBv1r9/KcXYJGES4QS7OhxvR76+9DeojG0BsD8AQ==",
   "notes": [
-    "windhawk probe"
+    "windhawk integration"
   ]
 }
