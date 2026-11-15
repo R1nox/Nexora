@@ -50,7 +50,7 @@ class TaskbarService {
   // ── geometry (Windows 11): custom height / width / top edge by repositioning Shell_TrayWnd ──
   geometryWanted() {
     const c = this.cfg; if (!c.enabled || !plat.win11) return false;
-    const z = c.size || {}; return c.position === 'top' || z.height > 0 || z.widthPct < 100;
+    const z = c.size || {}; return c.position === 'top' || z.height > 0 || z.widthPct < 100 || (c.floating.enabled && c.floating.marginX > 0);
   }
   applyGeometry(bars) {
     const c = this.cfg; const b = bars.find((x) => x.primary); if (!b) return;
@@ -62,8 +62,9 @@ class TaskbarService {
     const z = c.size;
     const origH = this.geo.rect.bottom - this.geo.rect.top;
     const hh = z.height > 0 ? Math.round(z.height * s) : origH;
-    const ww = Math.round(sw * z.widthPct / 100);
-    const x = z.align === 'left' ? 0 : z.align === 'right' ? sw - ww : Math.round((sw - ww) / 2);
+    const side = c.floating.enabled ? Math.round(c.floating.marginX * s) : 0; // side margins narrow the real window, so the tray moves inward instead of being clipped
+    const ww = Math.max(Math.round(sw * 0.2), Math.round(sw * z.widthPct / 100) - 2 * side);
+    const x = z.align === 'left' ? side : z.align === 'right' ? sw - ww - side : Math.round((sw - ww) / 2);
     const y = c.position === 'top' ? 0 : sh - hh;
     if (Math.abs(rect.left - x) > 1 || Math.abs(rect.top - y) > 1 || Math.abs(rect.right - rect.left - ww) > 1 || Math.abs(rect.bottom - rect.top - hh) > 1) win32.setPos(b.hwnd, x, y, ww, hh);
     const work = c.position === 'top' ? { left: 0, top: hh, right: sw, bottom: sh } : { left: 0, top: 0, right: sw, bottom: sh - hh };
@@ -158,7 +159,7 @@ class TaskbarService {
         const s = this.scaleOf(rect);
         const horiz = w >= h;
         let l = 0, t = 0, r = w, bt = h;
-        if (horiz) { l = Math.round(f.marginX * s); r = w - l; t = Math.round(f.insetTop * s); bt = h - Math.round(f.insetBottom * s); }
+        if (horiz) { l = plat.win11 ? 0 : Math.round(f.marginX * s); r = w - l; t = Math.round(f.insetTop * s); bt = h - Math.round(f.insetBottom * s); }
         else { t = Math.round(f.marginX * s); bt = h - t; l = Math.round(f.insetTop * s); r = w - Math.round(f.insetBottom * s); }
         if (r - l < 80 || bt - t < 20) { win32.clearRegion(b.hwnd); continue; } // never produce an unusable taskbar
         win32.setRoundRegion(b.hwnd, l, t, r, bt, Math.round(f.radius * s));
