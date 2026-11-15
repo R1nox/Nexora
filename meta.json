@@ -1,11 +1,11 @@
 {
   "baseVersion": "1.0.2",
-  "build": "20261115-1257-hot",
-  "sha256": "05005f4de0ef98579b022d37d65731470120898b21684172929057082fcf31d3",
-  "size": 456247,
+  "build": "20261115-1300-hot",
+  "sha256": "35a30706be74749bf036cab8896e18c684ea22c53392f9ccd2210cfcb07d96c7",
+  "size": 456512,
   "keyId": "wch-official-cadcfe4d",
-  "signature": "EBmU+CHrnNnTxEGTLofgaZTCHpbsyVgvdVLrYPwt5x+/m8YvllWKNjTgzY1NUnIyo2tmgyN8uQuceq0hw8+3Dw==",
+  "signature": "CWyh3WQKEU6/fxnOnDLmLa6qgrrtkuRMH1diNj+5tRaFkJT0UUIhQmXd+Un4J1ckEQWbBFyUiSuJRgz0xk01DQ==",
   "notes": [
-    "Windhawk removed; honest Win11 25H2 taskbar limits"
+    "dashboard quick actions blocked on 25H2"
   ]
 }
