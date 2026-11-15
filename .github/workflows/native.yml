@@ -1,0 +1,27 @@
+name: native
+on:
+  push:
+    branches: [native]
+  workflow_dispatch:
+jobs:
+  tap:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+      - name: Get C++/WinRT
+        shell: pwsh
+        run: |
+          nuget install Microsoft.Windows.CppWinRT -Version 2.0.240405.15 -OutputDirectory pkg | Out-Host
+          $exe = Get-ChildItem pkg -Recurse -Filter cppwinrt.exe | Select-Object -First 1
+          & $exe.FullName -input sdk -output native/tap/gen -verbose | Out-Host
+      - name: Build wch_tap.dll
+        shell: cmd
+        working-directory: native/tap
+        run: cl /nologo /EHsc /std:c++17 /O2 /MT /LD /I gen tap.cpp /Fe:wch_tap.dll /link /DEF:tap.def windowsapp.lib ole32.lib oleaut32.lib
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wch_tap
+          path: native/tap/wch_tap.dll

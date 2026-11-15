@@ -1,0 +1,4 @@
+LIBRARY wch_tap
+EXPORTS
+  DllGetClassObject PRIVATE
+  DllCanUnloadNow PRIVATE
