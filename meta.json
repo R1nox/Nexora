@@ -1,0 +1,11 @@
+{
+  "baseVersion": "1.0.2",
+  "build": "20261115-1151-hot",
+  "sha256": "289f590faa85f889baf0dc37f7f7a2f6b2cfb9c6cfc3c549aaa2ecfccf88fdc0",
+  "size": 454308,
+  "keyId": "wch-official-cadcfe4d",
+  "signature": "Sg3nvdLkL8+znWJZ/dnm/FFBtcD9a0alesL9iJqlM846XrpRgzLU2XngDqRONAasmQ6XiPd/WqW69So1sNhmCw==",
+  "notes": [
+    "diag taskbar"
+  ]
+}
