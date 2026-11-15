@@ -131,9 +131,10 @@ struct Tap : implements<Tap, IObjectWithSite, IVisualTreeServiceCallback> {
     try {
       Cfg c; Kind kind;
       { std::lock_guard<std::mutex> g(mu); auto it = items.find(h); if (it == items.end()) return; kind = it->second.kind; c = cfg; }
-      com_ptr<IInspectable> insp;
-      HRESULT hr = diag->GetIInspectableFromHandle(h, insp.put());
-      if (FAILED(hr) || !insp) { Log(L"GetIInspectableFromHandle " + Hex(hr)); return; }
+      ::IInspectable* raw = nullptr;
+      HRESULT hr = diag->GetIInspectableFromHandle(h, &raw);
+      if (FAILED(hr) || !raw) { Log(L"GetIInspectableFromHandle " + Hex(hr)); return; }
+      winrt::Windows::Foundation::IInspectable insp{ raw, winrt::take_ownership_from_abi };
       auto obj = insp.as<DependencyObject>();
       auto self = get_strong();
       obj.Dispatcher().RunAsync(Windows::UI::Core::CoreDispatcherPriority::Normal, [self, obj, h, kind, c]() {

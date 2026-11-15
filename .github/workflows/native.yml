@@ -20,7 +20,7 @@ jobs:
       - name: Build wch_tap.dll
         shell: cmd
         working-directory: native/tap
-        run: cl /nologo /EHsc /std:c++17 /O2 /MT /LD /I gen tap.cpp /Fe:wch_tap.dll /link /DEF:tap.def windowsapp.lib ole32.lib oleaut32.lib
+        run: cl /nologo /D_SILENCE_EXPERIMENTAL_COROUTINE_DEPRECATION_WARNINGS /EHsc /std:c++17 /O2 /MT /LD /I gen tap.cpp /Fe:wch_tap.dll /link /DEF:tap.def windowsapp.lib ole32.lib oleaut32.lib
       - uses: actions/upload-artifact@v4
         with:
           name: wch_tap
